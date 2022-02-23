@@ -67,7 +67,6 @@ const polybiusModule = (function () {
         .split("")
         .map((char) => polybiusPairs[char] || char)
         .join("");
-      console.log(encodeOutput);
       return encodeOutput;
     } else if (!encode) {
       if (Math.abs(input.replace(" ", "").length % 2) === 1) {
